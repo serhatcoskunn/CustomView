@@ -90,7 +90,7 @@ public class CustomLayout extends ConstraintLayout {
         //periodSize=(int)(width/(period*2));
         mPaintLine.setStrokeWidth(width*linePercent);
 
-        if(lineLocation==1)
+        if(lineLocation==1 && lineLocation ==2)
         {
             periodSize=(int)((width-linewidth)/(period*2));
         }
@@ -112,11 +112,15 @@ public class CustomLayout extends ConstraintLayout {
         mPath.lineTo(0,vaweHeight);
 
 
-        mPath.moveTo(linewidth,vaweHeight);
+
+
 
         int counter=0;
-        for(int i=periodSize;i<=width;i=i+periodSize)
+        int temI=periodSize;
+        if(lineLocation==0){ mPath.moveTo(linewidth,vaweHeight);temI+=linewidth;}
+        for(int i=temI;i<=width;i=i+periodSize)
         {
+
             int lastX=(width-i) < periodSize ?  width : i;
 
             if(counter % 2 != 0 )//up vawe

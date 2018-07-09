@@ -42,11 +42,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.48000002"
-        app:line_location="0"
-        app:line_percent="0"
+        app:line_location="1"
+        app:line_percent="0.05"
         app:line_color="#ffffff"
         app:vawe_percent="0.1"
-        app:vawe_period="6.5"
+        app:vawe_period="7"
 
         >
 
