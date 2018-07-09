@@ -71,10 +71,10 @@ public class PathView extends View {
         mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
 
 
-        mPath.moveTo(width,vaweHeight);
-        mPath.lineTo(width,height);
-        mPath.lineTo(0,height);
-        mPath.lineTo(0,vaweHeight);
+        //mPath.moveTo(width,vaweHeight);
+        //mPath.lineTo(width,height);
+        //mPath.lineTo(0,height);
+        //mPath.lineTo(0,vaweHeight);
 
 
         //mPath.quadTo(width/2, vaweHeight*2, width, vaweHeight);//aşağı doğru
@@ -86,7 +86,7 @@ public class PathView extends View {
 
 
 
-        int counter=0;
+        /*int counter=0;
         for(int i=periodSize;i<=width;i=i+periodSize)
         {
             int temp;
@@ -105,8 +105,7 @@ public class PathView extends View {
             Log.d("counter",""+temp);
             counter++;
 
-        }
-
+        }*/
 
 
 

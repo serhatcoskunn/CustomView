@@ -19,7 +19,8 @@
         android:transitionName="test"/>-->
 
     <com.ahe.customview.PathView
-        android:id="@+id/imageView"
+
+        android:id="@+id/imageView2"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:transitionName="test"
@@ -27,17 +28,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        />
 
 
     <com.ahe.customview.CustomLayout
-        android:layout_width="98dp"
-        android:layout_height="100dp"
+
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.48000002">
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.48000002"
+        app:line_location="0"
+        app:line_percent="0"
+        app:line_color="#ffffff"
+        app:vawe_percent="0.1"
+        app:vawe_period="6.5"
+
+        >
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
 
     </com.ahe.customview.CustomLayout>
 </android.support.constraint.ConstraintLayout>
